@@ -1,7 +1,7 @@
-# douyin_drunker
+# douyin_drunker抖音机器人
 
 
-终于还是对抖音下手了，douyin_drunker是一个抖音机器人，欢迎关注douyin_drunker抖音号
+终于还是对抖音下手了
 
 
 **功能：**
@@ -58,7 +58,7 @@ https://github.com/evan2048/douyin_drunker/blob/master/douyin_drunker_main.py
 抖音号：douyin_drunker
 
 
-机器人日夜不歇，持续更新中...
+机器人日夜不歇，实时更新中...
 
 
 
