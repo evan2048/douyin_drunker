@@ -1,16 +1,22 @@
 # douyin_drunker
 
 
-终于还是对抖音下手了，douyin_drunker是一个抖音机器人，欢迎关注douyin_drunker抖音号。
+终于还是对抖音下手了，douyin_drunker是一个抖音机器人，欢迎关注douyin_drunker抖音号
 
 
 **功能：**
 
 
-1. 抖音APP自动翻页
-2. 人脸检测
-3. 颜值分析
-4. 自动点赞
+抖音APP自动翻页
+
+
+人脸检测
+
+
+颜值分析
+
+
+自动点赞
 
 
 **开发环境：**
@@ -25,9 +31,13 @@ PyCharm 2019.2.2
 **技术点：**
 
 
-1. Android ADB tools
-2. Tencent AI platform
-3. Python code integration, HTTP POST, Image Processing
+Android ADB tools
+
+
+Tencent AI platform
+
+
+Python code integration, HTTP POST, Image Processing
 
 
 **耗时：**
@@ -49,4 +59,6 @@ https://github.com/evan2048/douyin_drunker/blob/master/douyin_drunker_main.py
 
 
 机器人日夜不歇，持续更新中...
+
+
 
