@@ -1,7 +1,7 @@
 # douyin_drunker
 
 
-douyin_drunker是一个抖音机器人，欢迎关注douyin_drunker抖音号
+终于还是对抖音下手了，douyin_drunker是一个抖音机器人，欢迎关注douyin_drunker抖音号。
 
 
 **功能：**
