@@ -148,6 +148,7 @@ for i in range(0, 3):
                 tap_like_point_x = add_random_offset(TAP_LIKE_POINT_X, TAP_POINT_THRESHOLD)
                 tap_like_point_y = add_random_offset(TAP_LIKE_POINT_Y, TAP_POINT_THRESHOLD)
                 adb_tap(tap_like_point_x, tap_like_point_y)
+                time.sleep(0.5)
                 print('save screencap...face_id=%s' % face['face_id'])
                 os.system('cp %s %s' % (get_adb_screencap_jpg_file_path(), (os.getcwd() + '/' + ADB_SCREENCAP_DIRCTORY_NAME + '/' + face['face_id'] + '.jpg')))
                 break  # one is enough, avoid duplicate
