@@ -61,7 +61,7 @@ def get_response_json(image_file_path):
     current_timestamp = int(time.time())
     set_array_key_value(request_data, 'app_id', APP_ID)
     set_array_key_value(request_data, 'time_stamp', current_timestamp)
-    set_array_key_value(request_data, 'nonce_str', str(current_timestamp * random.randint(0, current_timestamp)))
+    set_array_key_value(request_data, 'nonce_str', str(current_timestamp * random.randint(1, current_timestamp)))
     with open(image_file_path, 'rb') as bin_data:
         image_data = bin_data.read()
     base64encoded_image_data = base64.b64encode(image_data)
@@ -105,6 +105,8 @@ def add_random_offset(value, offset):
 
 
 def check_adb_devices():
+    print('adb wait-for-device...')
+    os.system('adb wait-for-device')
     os.system('adb devices')
 
 
@@ -152,4 +154,6 @@ for i in range(0, 3):
                 print('save screencap...face_id=%s' % face['face_id'])
                 os.system('cp %s %s' % (get_adb_screencap_jpg_file_path(), (os.getcwd() + '/' + ADB_SCREENCAP_DIRCTORY_NAME + '/' + face['face_id'] + '.jpg')))
                 break  # one is enough, avoid duplicate
-    print('loop done')
+    simulate_human_delay_time = random.randint(1, 3)
+    print('loop done, delay %d seconds...' % simulate_human_delay_time)
+    time.sleep(simulate_human_delay_time)
